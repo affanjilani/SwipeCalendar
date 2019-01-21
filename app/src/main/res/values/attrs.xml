@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomCalendarView">
+        <attr name="gridColor" format="color" />
+        <attr name="currentDayColor" format="color" />
+        <attr name="weekHeaderColor" format="color" />
+        <attr name="monthHeaderColor" format="color" />
+
+        <!-- Need to put font file in fonts folder under assets folder. Valid format is filename.ext-->
+        <attr name="typeface" format="string"/>
+
+        <!-- true if there is need to select more than one day, false if not. -->
+        <attr name="multiDaySelect" format="boolean"/>
+
+    </declare-styleable>
+</resources>

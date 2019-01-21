@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/outsideGridCell"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="55dp"
+    android:layout_height="55dp">
+
+    <LinearLayout
+        android:id="@+id/insideGridCell"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_margin="6dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <!-- currentDay shape visibility dependant on if
+            cell's day == current day-->
+            <TextView
+                android:id="@+id/currentDateCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:visibility="gone"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/dayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="6"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+    <!-- Only show if there is an event that day, also set pic-->
+    <ImageView
+        android:id="@+id/eventSticker"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/fwdbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible">
+    </ImageView>
+</RelativeLayout>
